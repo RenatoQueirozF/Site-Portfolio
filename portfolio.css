@@ -93,7 +93,7 @@ nav a {
 
 .intro-description {
 
-    height: 68vh;
+    height: 76vh;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -121,23 +121,53 @@ nav a {
     font-weight: bold;
 }
 
-.instagram {
-    height: 32px;
-    width: 32px;
-}
-
 .social {
 
-    height: 80vh;
+    padding-bottom: 150px;
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
 .social-content {
+
     float: left;
     padding-left: 35px;
     padding-right: 35px;
 }
 
     /* Estilização Sobre Mim*/
+
+.about-me {
+    background-color: var(--cor2);
+}
+
+.about-me-description {
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.about-me-item-1 {
+
+    font-size: 32px;
+    color: var(--cor4);
+    font-weight: bold;
+    padding-top: 30px;
+}
+
+.about-me-item-2 {
+
+    font-size: 52px;
+    color: var(--cor4);
+    font-weight: bold;
+}
+
+.about-me-item-3 {
+
+    font-size: 33px;
+    color: var(--cor5);
+    font-weight: bold;
+}
