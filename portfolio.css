@@ -1,3 +1,26 @@
+@charset "utf-8";
+
+/* Media Queries */
+
+    /* Media Query SOBRE MIM */
+
+    @media only screen and (max-width:768px) {
+        .about-me-principal {
+            padding-top: 25px;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+    }
+    /* Media query SOBRE MIM IMAGEM */
+
+    @media only screen and (max-width:768px) {
+        .about-me-principal img {
+            width: 36,5%;
+            height: 36,5%;
+            padding-bottom: 30px;
+        }
+    }
+
 * {
 
     margin: 0;
@@ -190,23 +213,35 @@ nav a {
 .about-me-principal-item-1 {
 
     font-size: 1.7em;
+    color: var(--cor3);
     font-family: 'Montserrat', sans-serif;
     height: 20%;
     flex-wrap: wrap;
 }
 
-@media only screen and (max-width:768px) {
-	.about-me-principal {
-        padding-top: 25px;
-        flex-wrap: wrap;
-        text-align: center;
-	}
+.button-cv {
+    padding-top: 30px;
+    padding-bottom: 35px;
 }
 
-@media only screen and (max-width:768px) {
-    .about-me-principal img {
-        width: 36,5%;
-        height: 36,5%;
-        padding-bottom: 30px;
-    }
+.download-button {
+
+    font-family: 'Montserrat';
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 5px;
+    border: solid 2px var(--cor4);
+    cursor: pointer;
+    text-decoration: bolder;
+    color: var(--cor4);
+    background-color: #d4d4d4;
+    
+}
+
+.download-button:hover {
+
+    color: var(--cor2);
+    border: solid 2px var(--cor5);
+    transition:all 0.5s ease;
+    background-color: #141516;
 }
