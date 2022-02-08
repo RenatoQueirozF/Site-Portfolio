@@ -2,33 +2,55 @@
 
 /* Media Queries */
 
-    /* Media Query SOBRE MIM */
+/* Media Query SOBRE MIM */
 
-    @media only screen and (max-width:768px) {
-        .about-me-principal {
-            padding-top: 25px;
-            flex-wrap: wrap;
-            text-align: center;
-        }
+@media only screen and (max-width:768px) {
+    .about-me-principal {
+        padding-top: 25px;
+        flex-wrap: wrap;
+        text-align: center;
     }
-    /* Media query SOBRE MIM IMAGEM */
+}
 
-    @media only screen and (max-width:768px) {
-        .about-me-principal img {
-            width: 36,5%;
-            height: 36,5%;
-            padding-bottom: 30px;
-        }
+/* Media query SOBRE MIM IMAGEM */
+
+@media only screen and (max-width:768px) {
+    .about-me-principal img {
+        width: 36, 5%;
+        height: 36, 5%;
+        padding-bottom: 30px;
+    }
+}
+
+/*Media Query HABILIDADES*/
+
+@media only screen and (max-width:768px) {
+    .description-me {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+}
+
+
+/* Media Query FOOTER */
+
+@media only screen and (max-width:768px) {
+    .footer-contents h3 {
+        font-size: 20px !important;
+
     }
 
-    /*Media Query HABILIDADES*/
+    .footer-contents a {
+        font-size: 13px !important;
 
-    @media only screen and (max-width:768px) {
-        .description-me {
-            flex-wrap: wrap;
-            text-align: center;
-        }
     }
+
+    .footer-contents p {
+        font-size: 13px !important;
+
+    }
+
+}
 
 * {
 
@@ -38,11 +60,11 @@
 
 :root {
 
-    --cor1:#262b41;
-    --cor2:#cbcbcd;
-    --cor3:#7b7779;
-    --cor4:#dfb82f;
-    --cor5:#141516;
+    --cor1: #262b41;
+    --cor2: #cbcbcd;
+    --cor3: #7b7779;
+    --cor4: #dfb82f;
+    --cor5: #141516;
 }
 
 body {
@@ -54,8 +76,8 @@ body {
     background-position: center center;
 }
 
- /* Estilização do Header */
- 
+/* Estilização do Header */
+
 header {
 
     font-family: 'Montserrat', sans-serif;
@@ -92,19 +114,19 @@ nav li, .logo-position {
 
 nav a {
 
-    transition:all 0.5s ease;
+    transition: all 0.5s ease;
     padding: 10px;
-   
+
 }
 
 .nav-item:hover {
 
-    background-color:var(--cor5);
+    background-color: var(--cor5);
     color: var(--cor4);
 }
 
 .logo {
-    
+
     color: var(--cor4);
     text-decoration: none;
     font-weight: bolder;
@@ -116,7 +138,7 @@ nav a {
 
 /* Estilização da Main */
 
-    /* Estilização do Início*/
+/* Estilização do Início*/
 
 .intro {
 
@@ -169,10 +191,10 @@ nav a {
     padding-right: 35px;
 }
 
-    /* Estilização Sobre Mim*/
+/* Estilização Sobre Mim*/
 
 .about-me {
-    
+
     background-color: #d4d4d4;
     display: flex;
     flex-direction: column;
@@ -205,13 +227,13 @@ nav a {
     display: flex;
     align-items: center;
     padding-left: 20px;
-    width: 70%;  
+    width: 70%;
 }
 
 .about-me-principal img {
 
-    width: 36,5%;
-    height: 36,5%;
+    width: 36, 5%;
+    height: 36, 5%;
     display: block;
     margin: auto;
 }
@@ -242,24 +264,24 @@ nav a {
     color: var(--cor4);
     background-color: #d4d4d4;
     font-size: 1.3rem;
-    
+
 }
 
 .download-button:hover {
 
     color: var(--cor4);
     border: solid 2px var(--cor5);
-    transition:all 0.5s ease;
+    transition: all 0.5s ease;
     background-color: #141516;
     font-weight: bold;
 }
 
-    /* Estilização Habilidades */
+/* Estilização Habilidades */
 
 .ability {
     background-color: #fff;
     justify-content: center;
-    
+    padding-bottom: 40px;
 }
 
 .ability-icons img {
@@ -308,9 +330,18 @@ nav a {
     text-align: left;
 }
 
+@media only screen and (max-width:768px) {
+    .description-me {
+        flex-wrap: wrap;
+        text-align: center;
+        color: red;
+    }
+}
+
 .perfil-list {
     width: 86%;
 }
+
 .perfil-item, .ability-item {
     list-style: none;
     font-family: 'Montserrat';
@@ -328,14 +359,14 @@ nav a {
     padding-bottom: 10px;
 }
 
- /* Estilização Portfólio */
+/* Estilização Portfólio */
 
- .portfolio {
+.portfolio {
     background-color: #d4d4d4;
     align-items: center;
- }
+}
 
- .portfolio-description {
+.portfolio-description {
 
     text-align: center;
     font-family: 'Montserrat';
@@ -363,14 +394,18 @@ nav a {
     max-width: 1000px;
     position: relative;
     margin: auto;
-  }
+}
 
-  .carrossel-imagens {
+.carrossel-imagens {
 
     display: none;
-  }
+}
 
-  .button-prev, .button-next {
+.carrossel-imagens img {
+    border-radius: 20px;
+}
+
+.button-prev, .button-next {
 
     cursor: pointer;
     position: absolute;
@@ -384,28 +419,28 @@ nav a {
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
-  }
-  
-  .button-next {
+}
+
+.button-next {
     right: 0;
     border-radius: 3px 0 0 3px;
-  }
-  
-  .button-prev:hover, .button-next:hover {
-    background-color: rgba(0,0,0,0.8);
-  }
-  
-  .carrossel-image-description {
+}
+
+.button-prev:hover, .button-next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.carrossel-image-description {
     color: red;
     font-size: 35px;
     position: absolute;
     bottom: 8px;
-    width: 100%; 
+    width: 100%;
     text-align: center;
     font-family: 'Montserrat';
-  }
-  
-  .page-count {
+}
+
+.page-count {
     color: red;
     font-size: 25px;
     padding-top: 45px;
@@ -413,9 +448,9 @@ nav a {
     position: absolute;
     top: 0;
     font-family: 'Montserrat';
-  }
-  
-  .dot {
+}
+
+.dot {
     cursor: pointer;
     height: 15px;
     width: 15px;
@@ -424,10 +459,148 @@ nav a {
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
-  }
-  
-  .active, .dot:hover {
-    background-color: #717171;
-  }
-  
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
 
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Estilização Aba de Contato  */
+
+.contact {
+    background-color: white;
+    align-items: center;
+}
+
+.contact-description {
+    text-align: center;
+    font-family: 'Montserrat';
+}
+
+.contact-description-item-1 {
+
+    font-size: 32px;
+    color: var(--cor5);
+    font-weight: bold;
+    padding-top: 30px;
+}
+
+.contact-description-item-2 {
+
+    font-size: 52px;
+    color: var(--cor4);
+    font-weight: bold;
+}
+
+.contact-form {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+form {
+    padding-top: 50px;
+    font-family: 'Montserrat';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+form input, form textarea {
+
+    outline: unset;
+    padding: 30px;
+    font-size: 18px;
+    border-top: 0 none;
+    border-right: 0 none;
+    border-left: 0 none;
+    margin-bottom: 16px;
+    margin-top: 7px;
+    border-radius: 2px;
+    width: 40vw;
+    font-family: 'Montserrat';
+}
+
+.send-button {
+
+    font-family: 'Montserrat';
+    padding: 10px 20px;
+    margin: 35px;
+    text-align: center;
+    border-radius: 5px;
+    border: solid 2px var(--cor4);
+    cursor: pointer;
+    font-weight: bolder;
+    color: var(--cor4);
+    font-size: 1.3rem;
+
+}
+
+.send-button:hover {
+    background-color: black;
+    color: var(--cor4);
+    border-color: black;
+    transition: all 0.5s ease;
+}
+
+/* Estilizando Footer*/
+
+footer p {
+    color:var(--cor2);
+    background-color: black;
+    text-align: center;
+    font-size: 17px;
+}
+
+.footer-content {
+
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.footer-contents {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    font-family: 'Montserrat';
+
+}
+
+.footer-content h3 {
+
+    color: var(--cor4);
+    font-weight: bolder;
+    font-size: 26px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+.footer-content a {
+
+    color: var(--cor3);
+    font-size: 19px;
+    text-decoration: none;
+    margin-top: 17px;
+    margin-bottom: 17px;
+}
+
+.footer-content p {
+    color: var(--cor3);
+    font-size: 19px;
+}
+
+.footer-contents img {
+
+    padding-top: 40px;
+    padding-bottom: 40px;
+}

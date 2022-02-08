@@ -54,6 +54,7 @@
       </ul>
     </nav>
   </header>
+
   <!-- Fim Navbar -->
 
   <!-- Inicío -->
@@ -84,7 +85,7 @@
 
     </section>
 
-    <!-- Fim Inicio -->
+    <!-- Sobre mim -->
 
     <section class="about-me" id="about-me">
 
@@ -165,7 +166,7 @@
             <li class="perfil-item">
 
               <strong>Website:</strong>
-              <p> Lorem ipsum dolor sit amet</p>
+              <p>renatoqueiroz.github.io</p>
 
             </li>
 
@@ -212,7 +213,7 @@
 
     </section>
 
-    <!-- Estilização Portfolio -->
+    <!-- Portfolio -->
 
 
     <section class="portfolio" id="portfolio">
@@ -225,69 +226,131 @@
 
       </div>
 
-<div class="carrossel">
+      <div class="carrossel">
 
-  <div class="carrossel-imagens">
+        <div class="carrossel-imagens">
 
-    <div class="page-count"> 1 </div>
+          <div class="page-count"> 1 </div>
 
-    <img src="assets/portfolio.png" style="width:100%">
+          <img src="assets/portfolio.png" style="width:100%">
 
-    <div class="carrossel-image-description">SITE 1</div>
+          <div class="carrossel-image-description">SITE 1</div>
 
-  </div>
+        </div>
 
-  <div class="carrossel-imagens">
+        <div class="carrossel-imagens">
 
-    <div class="page-count"> 2 </div>
+          <div class="page-count"> 2 </div>
 
-    <img src="assets/1366x768.png" style="width:100%">
+          <img src="assets/1366x768.png" style="width:100%">
 
-    <div class="carrossel-image-description">SITE 2</div>
+          <div class="carrossel-image-description">SITE 2</div>
 
-  </div>
+        </div>
 
-  <div class="carrossel-imagens">
+        <div class="carrossel-imagens">
 
-    <div class="page-count"> 3 </div>
+          <div class="page-count"> 3 </div>
 
-    <img src="assets/1366x768.png" style="width:100%">
+          <img src="assets/1366x768.png" style="width:100%">
 
-    <div class="carrossel-image-description"> SITE 3</div>
+          <div class="carrossel-image-description"> SITE 3</div>
 
-  </div>
+        </div>
 
-  <a class="button-prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="button-prev" onclick="plusSlides(-1)">&#10094;</a>
 
-  <a class="button-next" onclick="plusSlides(1)">&#10095;</a>
+        <a class="button-next" onclick="plusSlides(1)">&#10095;</a>
 
-</div>
+      </div>
 
-<div style="text-align:center">
+      <div style="text-align:center">
 
-  <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(1)"></span>
 
-  <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
 
-  <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
 
-</div>
+      </div>
 
     </section>
 
-    <div class="content-5">
+    <section class="contact">
 
-      <p>Conteúdo Contato</p>
+      <div class="contact-description">
 
-    </div>
-    <div class="Footer"></div>
+        <p class="contact-description-item-1">Contato</p>
+
+        <h1 class="contact-description-item-2">Quer entrar em contato?</h1>
+
+      </div>
+
+      <div class="contact-form">
+
+        <form>
+
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" placeholder="Nome*">
+
+          <label for="Email">E-mail:</label>
+          <input type="text" id="Email" name="Email" placeholder="Email*">
+
+          <label for="mensagem">Mensagem:</label>
+
+          <textarea style="resize: vertical" rows="10" name="msg" placeholder="Digite sua mensagem" required></textarea>
+
+        </form>
+
+        <input class="send-button" type="button" value="Enviar">
+
+      </div>
+
+    </section>
 
   </main>
 
   <footer>
 
+    <div class="footer-content">
+
+      <div class="footer-contents">
+
+        <img src="assets/whatsapp.png">
+        
+        <h3>CHAMADA</h3>
+
+        <p>(21) 98599-7086</p>
+
+      </div>
+
+      <div class="footer-contents">
+        <img src="assets/email.png">
+
+        <h3>E-MAIL</h3>
+
+        <p>renatoqf.13@gmail.com</p>
+
+      </div>
+
+      <div class="footer-contents">
+
+        <img src="assets/user.png">
+
+        <h3>SOCIAIS</h3>
+
+        <a href="https://www.instagram.com/renatinq" target="_blank">Instagram</a>
+
+        <a href="https://www.linkedin.com/in/renato-queiroz-a458511b5/" target="_blank">Linkedin</a>
+        
+        <a href="https://github.com/RenatoQueirozF" target="_blank">Github</a>
+
+      </div>
+    </div>
+    <p>2022 ©  Todos os Direitos Reservados | Renato Queiroz Ferreira</p>
 
   </footer>
+
 </body>
 
 <script src="Js/index.js"></script>
