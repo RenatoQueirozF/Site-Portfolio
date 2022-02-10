@@ -1,3 +1,30 @@
+//Scroll Suave
+
+
+//Definir todos os itens da navbar como variavel
+const navMenu = document.querySelectorAll ('.nav-item[href^="#"]');
+
+//Adicionar evento para todos os elementos da Navbar ao clicar
+navMenu.forEach(item => {
+  item.addEventListener('click', ScrollToIdOnClick);
+})
+//Evento ao clicar
+function ScrollToIdOnClick (event) {
+  event.preventDefault();
+  const element = event.target;
+  const id = element.getAttribute('href');
+  const to = document.querySelector (id).offsetTop;
+  
+//Funcionamento do Scroll Suave
+  window.scroll ({
+
+    top: to,
+    behavior: "smooth",
+  });
+}
+
+//Carrossel
+
 var slideIndex = 1;
 showSlides(slideIndex);
 
