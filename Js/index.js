@@ -63,5 +63,10 @@ function toggleMenu(){
   Menu.classList.toggle('active');
 }
 
-btnMobile.addEventListener('click', toggleMenu);
+function closeMenu (){
+  const btnMobile = document.getElementById ('btn-mobile');
+  btnMobile.classList.toggle ('active')
+} 
 
+btnMobile.addEventListener('click', toggleMenu);
+btnMobile.addEventListener('click', j);
